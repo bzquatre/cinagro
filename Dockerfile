@@ -11,4 +11,4 @@ RUN chown -R odoo:odoo /mnt/extra-addons /etc/odoo
 
 USER odoo
 
-CMD ["odoo", "-c", "/etc/odoo/odoo.conf","-d","cinagrodb","-i","base","product","sale_management","stock","website","website_sale","mrp","purchase","account" ,"--stop-after-init"]
+CMD ["odoo", "-c", "/etc/odoo/odoo.conf"]
