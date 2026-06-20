@@ -11,4 +11,4 @@ RUN chown -R odoo:odoo /mnt/extra-addons /etc/odoo
 
 USER odoo
 
-CMD ["odoo", "-c", "/etc/odoo/odoo.conf"]
+CMD ["odoo", "-c", "/etc/odoo/odoo.conf","-i","base"]
