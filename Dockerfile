@@ -1,8 +1,10 @@
 FROM odoo:17.0
 
-COPY ./odoo.conf /etc/odoo/odoo.conf
+USER root
 
-RUN chown -R odoo:odoo /etc/odoo
+RUN mkdir -p /etc/odoo
+
+COPY ./odoo.conf /etc/odoo/odoo.conf
 
 USER odoo
 
